@@ -14,3 +14,5 @@ Activity 2: Getting someone else's change
 Activity 3: Making a change
 
 * Make a change to the repository. Synchronize this change to your forked repository. This is called a "push". Give the commit a meaningful commit message. 
+
+Activity 4: Doing a cartwheel
