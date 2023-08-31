@@ -8,11 +8,13 @@ nMax = 20; % max number of days to simulate
 N = 10; % number of scoops in each jar
 x = zeros(1,nMax); % fraction caffeinated
 x(1) = 1.0; % initial fraction caffeinated
+r = 0.1;
+K = 0.6;
 
 for n=2:nMax
     
     %x(n) = (1-1/N) * x(n-1);
-    %x(n) = x(n-1) - 1/N*x(n-1);
+    x(n) = x(n-1) + r*(1-(x(n)/K))*x(n-1);
     
 end % finished loop through days
 
